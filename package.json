@@ -1,0 +1,22 @@
+{
+  "name": "workshop-webtech",
+  "version": "1.0.0",
+  "description": "58160586 vichak hongmala",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vichakza/workshop-webtech.git"
+  },
+  "author": "vichak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vichakza/workshop-webtech/issues"
+  },
+  "homepage": "https://github.com/vichakza/workshop-webtech#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
