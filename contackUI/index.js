@@ -49,3 +49,21 @@ router.get('/contacts/:id',(req,res)=>{
     res.status(201).json(contactList)
  })
  
+ //put [Editor]
+router.put('/contacts/:id',(req,res)=>{
+
+    let id = req.params.id 
+    let contact = req.body
+    contactList[id] = contact
+    res.status(200).json(contactList)
+})
+
+//Delect
+router.delete('/contacts/:id',(req,res)=>{
+
+    let id = req.params.id
+    contactList.splice(id, 1)
+    res.status(204).json()
+})
+
+module.exports = router
