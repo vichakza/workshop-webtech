@@ -30,3 +30,22 @@ router.get('/contacts',(req,res)=>{
     
     
 })
+
+//getID
+router.get('/contacts/:id',(req,res)=>{
+    let id = req.params.id
+    for(var i=0; i<contactList.length; i++){
+     if(contactList[i].id == id)
+     res.json(contactList[i])
+    }
+    
+ })
+ 
+ 
+ //add
+ router.post('/contacts',(req,res)=>{
+    let newcontactList = req.body
+    contactList.push(newcontactList)
+    res.status(201).json(contactList)
+ })
+ 
